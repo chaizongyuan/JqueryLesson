@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>case.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+	
+	
+	<script type="text/javascript">
+		window.onload=function(){
+			var tb=document.getElementById("tb");
+			var mytr=tb.getElementsByTagName("tr");
+			for(var i=0;i<mytr.length;i++){
+				if(i%2==0){
+					mytr[i].style.backgroundColor="red";
+				}else{
+					mytr[i].style.backgroundColor="green";
+				}
+			}
+		}
+	</script>
+  </head>
+  
+  <body>
+    <table id="tb">
+    	<tr><th>姓名</th><th>性别</th><th>年龄</th></tr>
+    	<tr><td>zs</td><td>female</td><td>22</td></tr>
+    	<tr><td>ls</td><td>male</td><td>25</td></tr>	
+    	<tr><td>wf</td><td>male</td><td>23</td></tr>
+    	<tr><td>sy</td><td>female</td><td>24</td></tr>
+    	<tr><td>zp</td><td>male</td><td>21</td></tr>
+    </table>
+    
+    
+    <input type="checkbox"/>全选
+    <input type="checkbox"/>反选<br/>
+    <input type="checkbox"/>唱歌
+    <input type="checkbox"/>跳舞
+    <input type="checkbox"/>画画
+    <input type="checkbox"/>看书
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>work2.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+	<script type="text/javascript" src="jquery-3.1.0.js"></script>
+	
+	<script type="text/javascript">
+		$(function(){
+			$("[type='button1']").click(function(){			
+				$("#dan3").attr("selected",true);			
+			});
+			
+			$("[type='button2']").click(function(){
+				$("#duo2").attr("selected","true");
+				$("#duo5").attr("selected","true");
+			});
+			
+			
+			$("[type='button3']").click(function(){
+				$("#du2").attr("selected","true");
+				$("#du4").attr("selected","true");
+			});
+		})
+		
+		
+	</script>
+  </head>
+  
+  <body>
+  	<form action="#">
+  		<input type="text" defaultValue="请输入邮箱地址"/><br/>
+	  	<input type="password" defaultValue="请输入邮箱密码"/><br/>
+	  	<button>登录</button>
+	  	</br>
+	  	</br>
+	  	</br>
+	  	<!-- 多选框 -->
+		<input type="checkbox" id="du1"/>多选1
+	  	<input type="checkbox" id="du2"/>多选2
+	  	<input type="checkbox" id="du3"/>多选3
+	  	<input type="checkbox" id="du4"/>多选4<br/>
+	  	<!-- 单选框 -->
+	  	<input type="radio" id="da1"/>单选1
+	  	<input type="radio" id="da1"/>单选2
+	  	<input type="radio" id="da1"/>单选3<br/>
+	  	
+	  	<!-- 单选下拉框 -->
+	  	<select >
+	  		<option id="dan1">选择1号</option>
+	  		<option id="dan2">选择2号</option>
+	  		<option id="dan3">选择3号</option>		
+	  	</select>
+	  	
+	  	<!-- 多选下拉框 -->
+	  	<select multiple="multiple">
+	  		<option id="duo1">选择1号</option>
+	  		<option id="duo2">选择2号</option>
+	  		<option id="duo3">选择3号</option>	
+	  		<option id="duo4">选择4号</option>
+	  		<option id="duo5">选择5号</option>		
+	  	</select>
+	  	</br>
+	  	</br>
+	  	<button type="button1">使单选下拉框的'选择3号'被选中</button>
+	  	<button type="button2">使多选下拉框中的'选择2号'和'选择5号'被选中</button>
+	  	<button type="button3">使多选框的'多选2'和'多选4'被选中</button>
+	  	<button type="button4">使单选框的'单选2'被选中</button>
+	  	<button type="button5">打印已经被选中的值</button>
+  	</form> 	
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>tool.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="jquery-3.2.1.js"></script>
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+ 	<script type="text/javascript">
+ 	   $(function(){
+ 	       /*
+ 	       var uname=$("#uname").val();
+ 	       var password=$("#password").val();
+ 	       var repassword=$("#repassword").val();
+ 	       var uname=$("#age").val();
+ 	       var uname=$("input[name='hooby']").val();
+ 	       var param="uname="+uname+"&password="+password+"&.....";
+ 	       */
+ 	      
+ 	       $("#btn").click(function(){
+ 	           var paramStr=$("form").serialize() ;
+ 	           alert(paramStr);
+ 	       });
+ 	   })
+ 	</script>
+  </head>
+  
+  <body>
+     <form>
+  用戶名 <input type="text" name="uname">
+  密碼 <input type="text" name="password">
+  再次輸入密碼 <input type="text" name="repassword">
+  年齡<input type="text" name="age">
+  愛好
+  <input type="checkbox" name="hooby" value="0"/> 打籃球
+  <input type="checkbox" name="hooby" value="1" checked="checked"/> 游泳
+  <input id="btn" type="button" value="保存"/>
+</form>
+</html>

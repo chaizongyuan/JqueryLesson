@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>toggle.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="jquery-3.1.0.js"></script>
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+	<script type="text/javascript">
+		$(function(){
+			//切换显示/隐藏
+			$("input").click(function(){
+				$(this).toggle();		
+			})
+			
+			//用600毫秒缓慢的将段落的透明度调整到0.3(值越小越透明)		
+			$("img").fadeTo("slow",0.29);
+			//用600毫秒缓慢的将段落滑上或滑下
+			$("img").slideToggle("slow");
+			
+		
+		})
+	</script>
+  </head>
+  
+  <body>
+    <input type="button" value="点我消失" style="display: block;"/>
+    <img src="4.jpg"/>
+    112.95.206.216
+    
+  </body>
+</html>
